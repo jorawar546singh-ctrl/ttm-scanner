@@ -1,0 +1,2 @@
+ticker,price,box_top,box_bottom,pct_above_box,vol_today,vol_avg_20d,vol_ratio,suggested_stop,target_30pct,risk_pct,rr_ratio,box_range_pct,ma20,ma_rising,price_vs_ma20_pct,score,grade,tier,emoji
+NKLR,7.62,7.48,4.2,1.94,1223074,547880,2.23,7.33,9.91,3.86,7.76,43.78,5.29,True,44.12,60,C+,MARGINAL,🟠
