@@ -14,6 +14,7 @@
     --fg: #d6e4e8; --fg-dim: #7a8f96; --fg-faint: #4a5b61;
     --green: #00ff9d; --green-dim: #009e64;
     --red: #ff3355; --amber: #ffb545; --orange: #ff8040; --cyan: #4fd8ff;
+    --gold: #ffd24a; --elite: #ffe066;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
@@ -41,274 +42,112 @@
     letter-spacing: -0.02em; color: var(--green);
     text-shadow: 0 0 20px var(--green-dim);
   }
-  .brand .sub {
-    font-size: 11px; letter-spacing: 0.2em;
-    color: var(--fg-dim); text-transform: uppercase;
-  }
-  .status {
-    display: flex; gap: 22px; align-items: center;
-    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
-  }
-  .status .dot {
-    display: inline-block; width: 8px; height: 8px; border-radius: 50%;
-    background: var(--green); box-shadow: 0 0 12px var(--green);
-    animation: pulse 2s infinite; margin-right: 6px;
-  }
+  .brand .sub { font-size: 11px; letter-spacing: 0.2em; color: var(--fg-dim); text-transform: uppercase; }
+  .status { display: flex; gap: 22px; align-items: center; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .status .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 12px var(--green); animation: pulse 2s infinite; margin-right: 6px; }
   @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   .status .val { color: var(--fg); font-weight: 500; }
   .status .lab { color: var(--fg-dim); }
-  #refreshBtn {
-    background: transparent; color: var(--green);
-    border: 1px solid var(--green-dim);
-    padding: 7px 14px; font-family: inherit;
-    font-size: 11px; letter-spacing: 0.15em;
-    text-transform: uppercase; cursor: pointer; transition: all 0.15s;
-  }
-  #refreshBtn:hover {
-    background: var(--green); color: var(--bg);
-    box-shadow: 0 0 24px var(--green-dim);
-  }
+  #refreshBtn { background: transparent; color: var(--green); border: 1px solid var(--green-dim); padding: 7px 14px; font-family: inherit; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; transition: all 0.15s; }
+  #refreshBtn:hover { background: var(--green); color: var(--bg); box-shadow: 0 0 24px var(--green-dim); }
   main { padding: 28px; max-width: 1600px; margin: 0 auto; }
 
-  /* ===== POSITIONS PANEL ===== */
-  .positions-panel {
-    background: var(--bg-card); border: 1px solid var(--line);
-    margin-bottom: 32px; padding: 20px;
-  }
-  .positions-header {
-    display: flex; align-items: baseline; gap: 16px;
-    margin-bottom: 14px; padding-bottom: 10px;
-    border-bottom: 1px solid var(--line-hot);
-  }
-  .positions-header h2 {
-    font-family: 'Syne', sans-serif; font-size: 20px;
-    font-weight: 800; letter-spacing: -0.01em; color: var(--cyan);
-  }
-  .positions-header .total-pl {
-    margin-left: auto;
-    font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800;
-  }
-  .pos-table {
-    width: 100%; border-collapse: collapse;
-    font-size: 12px;
-  }
-  .pos-table th {
-    text-align: left; padding: 8px 10px;
-    color: var(--fg-dim); font-weight: 500;
-    font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
-    border-bottom: 1px solid var(--line-hot);
-  }
-  .pos-table td {
-    padding: 10px; border-bottom: 1px solid var(--line);
-  }
+  .positions-panel { background: var(--bg-card); border: 1px solid var(--line); margin-bottom: 32px; padding: 20px; }
+  .positions-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--line-hot); }
+  .positions-header h2 { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; color: var(--cyan); }
+  .positions-header .total-pl { margin-left: auto; font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; }
+  .pos-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .pos-table th { text-align: left; padding: 8px 10px; color: var(--fg-dim); font-weight: 500; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; border-bottom: 1px solid var(--line-hot); }
+  .pos-table td { padding: 10px; border-bottom: 1px solid var(--line); }
   .pos-table tr:hover td { background: #181f24; }
-  .pos-ticker {
-    font-family: 'Syne', sans-serif; font-weight: 800;
-    font-size: 16px; color: var(--fg);
-  }
-  .pos-tag {
-    display: inline-block; padding: 2px 8px;
-    font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase;
-    font-weight: 700; margin-left: 6px;
-  }
-  .pos-tag.initial   { background: var(--fg-faint); color: var(--bg); }
-  .pos-tag.breakeven { background: var(--amber);    color: var(--bg); }
-  .pos-tag.trail_10  { background: var(--green-dim); color: var(--bg); }
-  .pos-tag.trail_7   { background: var(--green);    color: var(--bg); }
-  .pos-tag.stopped   { background: var(--red);      color: var(--bg); }
+  .pos-ticker { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 16px; color: var(--fg); }
+  .pos-tag { display: inline-block; padding: 2px 8px; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700; margin-left: 6px; }
+  .pos-tag.initial { background: var(--fg-faint); color: var(--bg); }
+  .pos-tag.breakeven { background: var(--amber); color: var(--bg); }
+  .pos-tag.trail_10 { background: var(--green-dim); color: var(--bg); }
+  .pos-tag.trail_7 { background: var(--green); color: var(--bg); }
+  .pos-tag.stopped { background: var(--red); color: var(--bg); }
   .pos-stopped-row td { opacity: 0.55; }
   .pl-pos { color: var(--green); font-weight: 600; }
   .pl-neg { color: var(--red); font-weight: 600; }
-  .positions-empty {
-    padding: 30px; text-align: center;
-    color: var(--fg-dim); font-size: 12px;
-    border: 1px dashed var(--line-hot);
-  }
-  .positions-empty .big {
-    font-family: 'Syne', sans-serif; font-size: 20px;
-    color: var(--fg); margin-bottom: 4px;
-  }
+  .positions-empty { padding: 30px; text-align: center; color: var(--fg-dim); font-size: 12px; border: 1px dashed var(--line-hot); }
+  .positions-empty .big { font-family: 'Syne', sans-serif; font-size: 20px; color: var(--fg); margin-bottom: 4px; }
 
-  /* ===== KPI STATS ===== */
-  .stat-row {
-    display: grid; grid-template-columns: repeat(4, 1fr);
-    gap: 16px; margin-bottom: 28px;
-  }
-  .stat {
-    background: var(--bg-card); border: 1px solid var(--line);
-    padding: 16px 18px; position: relative; overflow: hidden;
-  }
-  .stat::before {
-    content: ''; position: absolute; left: 0; top: 0; bottom: 0;
-    width: 2px; background: var(--green);
-  }
+  .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+  .stat { background: var(--bg-card); border: 1px solid var(--line); padding: 16px 18px; position: relative; overflow: hidden; }
+  .stat::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--green); }
   .stat.red::before { background: var(--red); }
   .stat.amber::before { background: var(--amber); }
   .stat.cyan::before { background: var(--cyan); }
-  .stat .label {
-    font-size: 10px; letter-spacing: 0.2em;
-    color: var(--fg-dim); text-transform: uppercase; margin-bottom: 6px;
-  }
-  .stat .value {
-    font-family: 'Syne', sans-serif;
-    font-size: 28px; font-weight: 800; letter-spacing: -0.02em;
-  }
-  .stat .meta {
-    font-size: 10px; color: var(--fg-faint);
-    margin-top: 4px; letter-spacing: 0.05em;
-  }
+  .stat.gold::before { background: var(--gold); }
+  .stat .label { font-size: 10px; letter-spacing: 0.2em; color: var(--fg-dim); text-transform: uppercase; margin-bottom: 6px; }
+  .stat .value { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; letter-spacing: -0.02em; }
+  .stat .meta { font-size: 10px; color: var(--fg-faint); margin-top: 4px; letter-spacing: 0.05em; }
 
-  /* ===== TIERS ===== */
   .tier-section { margin-bottom: 36px; }
-  .panel-head {
-    display: flex; align-items: baseline; gap: 18px;
-    margin-bottom: 14px; padding-bottom: 10px;
-    border-bottom: 1px solid var(--line);
-  }
-  .panel-head h2 {
-    font-family: 'Syne', sans-serif; font-size: 20px;
-    font-weight: 800; letter-spacing: -0.01em;
-  }
-  .panel-head h2.clean    { color: var(--green); }
-  .panel-head h2.solid    { color: var(--amber); }
+  .panel-head { display: flex; align-items: baseline; gap: 18px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+  .panel-head h2 { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; }
+  .panel-head h2.clean { color: var(--green); }
+  .panel-head h2.solid { color: var(--amber); }
   .panel-head h2.marginal { color: var(--orange); }
-  .panel-head h2.weak     { color: var(--red); }
-  .panel-head .muted {
-    font-size: 10px; letter-spacing: 0.2em;
-    color: var(--fg-dim); text-transform: uppercase;
-  }
-  .panel-head .count {
-    font-family: 'Syne', sans-serif; font-size: 22px;
-    font-weight: 800; color: var(--fg);
-  }
+  .panel-head h2.weak { color: var(--red); }
+  .panel-head .muted { font-size: 10px; letter-spacing: 0.2em; color: var(--fg-dim); text-transform: uppercase; }
+  .panel-head .count { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; color: var(--fg); }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-    gap: 14px;
-  }
-  .card {
-    background: var(--bg-card); border: 1px solid var(--line);
-    padding: 18px; position: relative; transition: all 0.2s;
-  }
-  .card.clean    { border-color: var(--green-dim); box-shadow: 0 0 0 1px var(--green-dim) inset; }
-  .card.solid    { border-color: #7a5a1a; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 14px; }
+  .card { background: var(--bg-card); border: 1px solid var(--line); padding: 18px; position: relative; transition: all 0.2s; }
+  .card.clean { border-color: var(--green-dim); box-shadow: 0 0 0 1px var(--green-dim) inset; }
+  .card.solid { border-color: #7a5a1a; }
   .card.marginal { border-color: #7a3a20; }
-  .card.weak     { border-color: #5a1520; opacity: 0.75; }
+  .card.weak { border-color: #5a1520; opacity: 0.75; }
+  .card.elite { border-color: var(--elite); box-shadow: 0 0 30px rgba(255,224,102,0.2), 0 0 0 1px var(--elite) inset; }
   .card:hover { background: #181f24; transform: translateY(-1px); }
-  .card .grade-badge {
-    position: absolute; top: -1px; right: -1px;
-    padding: 6px 14px; font-size: 11px; font-weight: 800;
-    letter-spacing: 0.15em; text-transform: uppercase;
-    font-family: 'Syne', sans-serif;
-  }
-  .card.clean .grade-badge    { background: var(--green); color: var(--bg); }
-  .card.solid .grade-badge    { background: var(--amber); color: var(--bg); }
+  .card .grade-badge { position: absolute; top: -1px; right: -1px; padding: 6px 14px; font-size: 11px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; font-family: 'Syne', sans-serif; }
+  .card.clean .grade-badge { background: var(--green); color: var(--bg); }
+  .card.solid .grade-badge { background: var(--amber); color: var(--bg); }
   .card.marginal .grade-badge { background: var(--orange); color: var(--bg); }
-  .card.weak .grade-badge     { background: var(--red); color: var(--bg); }
-  .card .ticker-row {
-    display: flex; align-items: baseline; justify-content: space-between;
-    margin-bottom: 6px; padding-right: 90px;
-  }
-  .card .ticker {
-    font-family: 'Syne', sans-serif; font-size: 30px;
-    font-weight: 800; letter-spacing: -0.02em;
-  }
+  .card.weak .grade-badge { background: var(--red); color: var(--bg); }
+  .card.elite .grade-badge { background: var(--elite); color: var(--bg); }
+  .elite-tag { display: inline-block; padding: 2px 10px; font-size: 10px; font-weight: 800; letter-spacing: 0.2em; background: var(--elite); color: var(--bg); margin-left: 8px; font-family: 'Syne', sans-serif; }
+  .card .ticker-row { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 6px; padding-right: 100px; }
+  .card .ticker { font-family: 'Syne', sans-serif; font-size: 30px; font-weight: 800; letter-spacing: -0.02em; }
   .card .price { font-size: 18px; font-weight: 700; color: var(--green); }
-  .card .score-row {
-    display: flex; align-items: baseline; gap: 8px;
-    font-size: 11px; color: var(--fg-dim); margin-bottom: 10px;
-  }
-  .card .score-num {
-    font-family: 'Syne', sans-serif; font-size: 15px;
-    font-weight: 700; color: var(--fg);
-  }
+  .card .score-row { display: flex; align-items: baseline; gap: 8px; font-size: 11px; color: var(--fg-dim); margin-bottom: 10px; }
+  .card .score-num { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700; color: var(--fg); }
   .card .spark { height: 40px; margin: 6px -4px 12px; }
-  .breakdown {
-    border-top: 1px dashed var(--line-hot); padding-top: 12px; margin-bottom: 12px;
-  }
-  .bd-row {
-    display: grid; grid-template-columns: 110px 1fr 40px;
-    align-items: center; gap: 8px;
-    margin-bottom: 4px; font-size: 10.5px;
-  }
-  .bd-label {
-    color: var(--fg-dim); letter-spacing: 0.05em;
-    text-transform: uppercase; font-size: 9.5px;
-  }
+  .breakdown { border-top: 1px dashed var(--line-hot); padding-top: 12px; margin-bottom: 12px; }
+  .breakdown .bd-title { font-size: 9.5px; color: var(--fg-dim); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 6px; font-weight: 600; }
+  .bd-row { display: grid; grid-template-columns: 110px 1fr 40px; align-items: center; gap: 8px; margin-bottom: 4px; font-size: 10.5px; }
+  .bd-label { color: var(--fg-dim); letter-spacing: 0.05em; text-transform: uppercase; font-size: 9.5px; }
   .bd-bar { height: 6px; background: var(--line); position: relative; overflow: hidden; }
-  .bd-bar .fill {
-    position: absolute; left: 0; top: 0; bottom: 0;
-    background: linear-gradient(90deg, var(--green-dim), var(--green));
-  }
+  .bd-bar .fill { position: absolute; left: 0; top: 0; bottom: 0; background: linear-gradient(90deg, var(--green-dim), var(--green)); }
   .bd-bar.low .fill { background: var(--red); }
   .bd-bar.mid .fill { background: var(--amber); }
+  .bd-bar.gold .fill { background: linear-gradient(90deg, var(--amber), var(--gold)); }
   .bd-val { text-align: right; color: var(--fg); font-weight: 600; }
-  .metrics {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 6px 16px; font-size: 11px;
-    border-top: 1px dashed var(--line-hot); padding-top: 10px;
-  }
-  .metrics .k {
-    color: var(--fg-dim); letter-spacing: 0.08em;
-    text-transform: uppercase; font-size: 9.5px;
-  }
+  .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 16px; font-size: 11px; border-top: 1px dashed var(--line-hot); padding-top: 10px; }
+  .metrics .k { color: var(--fg-dim); letter-spacing: 0.08em; text-transform: uppercase; font-size: 9.5px; }
   .metrics .v { color: var(--fg); font-weight: 500; margin-bottom: 2px; }
   .metrics .v.pos { color: var(--green); }
   .metrics .v.neg { color: var(--red); }
   .metrics .v.warn { color: var(--amber); }
-  .links {
-    display: flex; gap: 8px; margin-top: 12px; padding-top: 10px;
-    border-top: 1px solid var(--line);
-  }
-  .links a {
-    flex: 1; text-align: center; color: var(--fg-dim);
-    text-decoration: none; font-size: 10px; letter-spacing: 0.15em;
-    text-transform: uppercase; padding: 6px;
-    border: 1px solid var(--line-hot); transition: all 0.15s;
-  }
+  .links { display: flex; gap: 8px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+  .links a { flex: 1; text-align: center; color: var(--fg-dim); text-decoration: none; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; padding: 6px; border: 1px solid var(--line-hot); transition: all 0.15s; }
   .links a:hover { color: var(--green); border-color: var(--green-dim); }
-  .empty {
-    padding: 60px 20px; text-align: center;
-    border: 1px dashed var(--line-hot); color: var(--fg-dim);
-  }
-  .empty .big {
-    font-family: 'Syne', sans-serif; font-size: 28px;
-    font-weight: 700; margin-bottom: 8px; color: var(--fg);
-  }
+  .empty { padding: 60px 20px; text-align: center; border: 1px dashed var(--line-hot); color: var(--fg-dim); }
+  .empty .big { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 700; margin-bottom: 8px; color: var(--fg); }
   .empty .sub { font-size: 12px; letter-spacing: 0.1em; }
   .history { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--line); }
-  .hist-row {
-    display: flex; gap: 2px; margin-top: 12px;
-    align-items: flex-end; height: 48px;
-  }
-  .hist-bar {
-    flex: 1; background: var(--line-hot); min-width: 4px;
-    position: relative; transition: background 0.2s;
-  }
+  .hist-row { display: flex; gap: 2px; margin-top: 12px; align-items: flex-end; height: 48px; }
+  .hist-bar { flex: 1; background: var(--line-hot); min-width: 4px; position: relative; transition: background 0.2s; }
   .hist-bar.has-clean { background: var(--green-dim); }
+  .hist-bar.has-elite { background: var(--gold); }
   .hist-bar:hover { background: var(--green); }
-  .hist-bar::after {
-    content: attr(data-tooltip); position: absolute;
-    bottom: 100%; left: 50%; transform: translateX(-50%);
-    background: var(--bg); border: 1px solid var(--green-dim);
-    padding: 4px 8px; font-size: 10px; white-space: nowrap;
-    opacity: 0; pointer-events: none; margin-bottom: 4px; transition: opacity 0.15s;
-  }
+  .hist-bar::after { content: attr(data-tooltip); position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: var(--bg); border: 1px solid var(--green-dim); padding: 4px 8px; font-size: 10px; white-space: nowrap; opacity: 0; pointer-events: none; margin-bottom: 4px; transition: opacity 0.15s; }
   .hist-bar:hover::after { opacity: 1; }
-  footer {
-    margin-top: 40px; padding: 20px 28px; text-align: center;
-    font-size: 10px; letter-spacing: 0.15em;
-    color: var(--fg-faint); text-transform: uppercase;
-    border-top: 1px solid var(--line);
-  }
+  footer { margin-top: 40px; padding: 20px 28px; text-align: center; font-size: 10px; letter-spacing: 0.15em; color: var(--fg-faint); text-transform: uppercase; border-top: 1px solid var(--line); }
   footer .dim { color: var(--fg-dim); }
-  .scanning::after {
-    content: ''; position: fixed;
-    left: 0; right: 0; top: 0; height: 2px;
-    background: linear-gradient(90deg, transparent, var(--green), transparent);
-    animation: scan 1.4s ease-in-out infinite; z-index: 99;
-  }
+  .scanning::after { content: ''; position: fixed; left: 0; right: 0; top: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--green), transparent); animation: scan 1.4s ease-in-out infinite; z-index: 99; }
   @keyframes scan { 0% { transform: translateY(0); } 100% { transform: translateY(100vh); } }
   @media (max-width: 768px) {
     .stat-row { grid-template-columns: repeat(2, 1fr); }
@@ -336,7 +175,6 @@
 </header>
 
 <main>
-  <!-- Open Positions -->
   <div class="positions-panel">
     <div class="positions-header">
       <h2>Open Positions</h2>
@@ -346,22 +184,21 @@
     <div id="posWrap"></div>
   </div>
 
-  <!-- KPIs -->
   <div class="stat-row">
+    <div class="stat gold">
+      <div class="label">🌟 ELITE Signals</div>
+      <div class="value" id="statElite">—</div>
+      <div class="meta">Technicals + fundamentals aligned</div>
+    </div>
     <div class="stat">
       <div class="label">Primary (A-grade)</div>
       <div class="value" id="statClean">—</div>
-      <div class="meta">CLEAN setups · all criteria met</div>
+      <div class="meta">CLEAN Darvas setups</div>
     </div>
     <div class="stat amber">
       <div class="label">Total Breakouts</div>
       <div class="value" id="statCount">—</div>
       <div class="meta" id="statCountMeta">Across all tiers</div>
-    </div>
-    <div class="stat cyan">
-      <div class="label">Highest Score</div>
-      <div class="value" id="statTopScore">—</div>
-      <div class="meta" id="statTopTicker">—</div>
     </div>
     <div class="stat red">
       <div class="label">Avg Risk</div>
@@ -375,7 +212,7 @@
   <div class="history">
     <div class="panel-head">
       <h2>Scan History</h2>
-      <span class="muted">Green = CLEAN setups found · 50 most recent runs</span>
+      <span class="muted">Gold = ELITE · Green = CLEAN · 50 most recent runs</span>
     </div>
     <div class="hist-row" id="histRow"></div>
   </div>
@@ -411,32 +248,48 @@ function sparkline(values, w = 340, h = 40) {
   return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" width="100%" height="${h}"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.5"/></svg>`;
 }
 
-function barRow(label, val, max = 20) {
+function barRow(label, val, max = 20, cls = null) {
   const pct = (val / max) * 100;
-  const cls = val >= 14 ? '' : (val >= 8 ? 'mid' : 'low');
-  return `<div class="bd-row"><div class="bd-label">${label}</div><div class="bd-bar ${cls}"><div class="fill" style="width:${pct}%"></div></div><div class="bd-val">${val}/20</div></div>`;
+  const autoCls = val >= 14 ? '' : (val >= 8 ? 'mid' : 'low');
+  return `<div class="bd-row"><div class="bd-label">${label}</div><div class="bd-bar ${cls || autoCls}"><div class="fill" style="width:${pct}%"></div></div><div class="bd-val">${val}/20</div></div>`;
 }
 
 function renderCard(h) {
-  const tierClass = h.tier.toLowerCase();
+  const isElite = h.fund_tag === 'ELITE';
+  const tierClass = (isElite ? 'elite ' : '') + h.tier.toLowerCase();
   const sb = h.score_breakdown || {};
+  const fb = h.fund_breakdown;
   const riskClass = h.risk_pct <= 7 ? 'pos' : (h.risk_pct <= 10 ? 'warn' : 'neg');
+  const gradeLabel = isElite ? `🌟 ELITE · ${h.fund_score}` : `${h.grade} · ${h.tier}`;
+
+  const fundSection = fb ? `
+      <div class="breakdown">
+        <div class="bd-title">Fundamentals · ${h.fund_score}/100 ${h.fund_tag ? '· ' + h.fund_tag : ''}</div>
+        ${barRow('Earnings', fb.earnings, 20, isElite ? 'gold' : null)}
+        ${barRow('Value', fb.value, 20, isElite ? 'gold' : null)}
+        ${barRow('Leader', fb.leader, 20, isElite ? 'gold' : null)}
+        ${barRow('Balance', fb.balance, 20, isElite ? 'gold' : null)}
+        ${barRow('Smart $', fb.smart_money, 20, isElite ? 'gold' : null)}
+      </div>` : '';
+
   return `
     <div class="card ${tierClass}">
-      <div class="grade-badge">${h.grade} · ${h.tier}</div>
+      <div class="grade-badge">${gradeLabel}</div>
       <div class="ticker-row">
         <div class="ticker">${h.ticker}</div>
         <div class="price">$${h.price}</div>
       </div>
-      <div class="score-row"><span>Score</span><span class="score-num">${h.score}</span><span>/100</span></div>
+      <div class="score-row"><span>Technical</span><span class="score-num">${h.score}</span><span>/100</span></div>
       ${sparkline(h.spark)}
       <div class="breakdown">
+        <div class="bd-title">Technical breakdown</div>
         ${barRow('Volume', sb.volume || 0)}
         ${barRow('Clarity', sb.clarity || 0)}
         ${barRow('Box Quality', sb.box_quality || 0)}
         ${barRow('Risk/Reward', sb.risk_reward || 0)}
         ${barRow('Trend', sb.trend || 0)}
       </div>
+      ${fundSection}
       <div class="metrics">
         <div><div class="k">Entry</div><div class="v">$${h.price}</div></div>
         <div><div class="k">Vol Ratio</div><div class="v pos">${h.vol_ratio}×</div></div>
@@ -454,22 +307,34 @@ function renderCard(h) {
 }
 
 function renderTiers(hits) {
+  const elite = hits.filter(h => h.fund_tag === 'ELITE');
   const buckets = { CLEAN: [], SOLID: [], MARGINAL: [], WEAK: [] };
-  hits.forEach(h => (buckets[h.tier] || buckets.WEAK).push(h));
+  hits.forEach(h => {
+    if (h.fund_tag === 'ELITE') return;
+    (buckets[h.tier] || buckets.WEAK).push(h);
+  });
+
+  let html = '';
+  let any = false;
+
+  if (elite.length) {
+    any = true;
+    html += `<div class="tier-section"><div class="panel-head"><h2 style="color:var(--gold)">🌟 ELITE Signals</h2><span class="count">${elite.length}</span><span class="muted">Fundamentals + technicals aligned · rare, high conviction</span></div><div class="grid">${elite.map(renderCard).join('')}</div></div>`;
+  }
+
   const sections = [
-    { key: 'CLEAN',    label: '🟢 Primary Candidates', hint: 'All criteria met · trade these first', cls: 'clean' },
-    { key: 'SOLID',    label: '🟡 Solid Setups',        hint: 'Strong but imperfect · secondary',    cls: 'solid' },
-    { key: 'MARGINAL', label: '🟠 Marginal Setups',     hint: 'Caution · one or two weak factors',   cls: 'marginal' },
-    { key: 'WEAK',     label: '🔴 Weak Setups',         hint: 'Skip unless you have a reason',       cls: 'weak' },
+    { key: 'CLEAN', label: '🟢 Primary (A-grade Darvas)', hint: 'Clean technical setups · trade with size', cls: 'clean' },
+    { key: 'SOLID', label: '🟡 Solid Setups', hint: 'Strong but imperfect · secondary', cls: 'solid' },
+    { key: 'MARGINAL', label: '🟠 Marginal Setups', hint: 'Caution · one or two weak factors', cls: 'marginal' },
+    { key: 'WEAK', label: '🔴 Weak Setups', hint: 'Skip unless you have a reason', cls: 'weak' },
   ];
-  let html = ''; let anyShown = false;
   for (const s of sections) {
     const items = buckets[s.key];
     if (items.length === 0) continue;
-    anyShown = true;
+    any = true;
     html += `<div class="tier-section"><div class="panel-head"><h2 class="${s.cls}">${s.label}</h2><span class="count">${items.length}</span><span class="muted">${s.hint}</span></div><div class="grid">${items.map(renderCard).join('')}</div></div>`;
   }
-  if (!anyShown) {
+  if (!any) {
     html = `<div class="empty"><div class="big">No breakouts right now</div><div class="sub">The market gives nothing. That's also information. Patience is the edge.</div></div>`;
   }
   $('#tiersWrap').innerHTML = html;
@@ -487,7 +352,6 @@ function renderPositions(data) {
     wrap.innerHTML = `<div class="positions-empty"><div class="big">No open positions</div>Add your trades to positions.json to track them here.</div>`;
     return;
   }
-
   let total = 0;
   for (const p of positions) total += p.pl_dollars || 0;
   const openCount = positions.filter(p => p.status === 'open').length;
@@ -502,45 +366,15 @@ function renderPositions(data) {
     const ruleTag = p.status === 'stopped' ? 'stopped' : (p.stop_rule || 'initial');
     const ruleLabel = p.status === 'stopped' ? 'STOPPED' : (p.stop_rule || 'initial').toUpperCase();
     const rowCls = p.status === 'stopped' ? 'pos-stopped-row' : '';
-    const distToStop = p.last_price && p.current_stop
-      ? ((p.last_price - p.current_stop) / p.last_price * 100).toFixed(1)
-      : '—';
-    return `
-      <tr class="${rowCls}">
-        <td>
-          <span class="pos-ticker">${p.ticker}</span>
-          <span class="pos-tag ${ruleTag}">${ruleLabel}</span>
-        </td>
-        <td>$${p.entry_price.toFixed(2)} <span style="color:var(--fg-faint)">· ${p.entry_date || ''}</span></td>
-        <td>$${p.last_price.toFixed(2)}</td>
-        <td class="${gainCls}">${p.gain_pct >= 0 ? '+' : ''}${p.gain_pct.toFixed(2)}%</td>
-        <td>$${p.current_stop.toFixed(2)} <span style="color:var(--fg-faint)">(${distToStop}%)</span></td>
-        <td>$${p.running_high.toFixed(2)} <span style="color:var(--fg-faint)">(+${p.high_gain_pct.toFixed(1)}%)</span></td>
-        <td class="${plCls}">${p.pl_dollars >= 0 ? '+' : ''}$${p.pl_dollars.toFixed(2)}</td>
-      </tr>`;
+    const distToStop = p.last_price && p.current_stop ? ((p.last_price - p.current_stop) / p.last_price * 100).toFixed(1) : '—';
+    return `<tr class="${rowCls}"><td><span class="pos-ticker">${p.ticker}</span><span class="pos-tag ${ruleTag}">${ruleLabel}</span></td><td>$${p.entry_price.toFixed(2)} <span style="color:var(--fg-faint)">· ${p.entry_date || ''}</span></td><td>$${p.last_price.toFixed(2)}</td><td class="${gainCls}">${p.gain_pct >= 0 ? '+' : ''}${p.gain_pct.toFixed(2)}%</td><td>$${p.current_stop.toFixed(2)} <span style="color:var(--fg-faint)">(${distToStop}%)</span></td><td>$${p.running_high.toFixed(2)} <span style="color:var(--fg-faint)">(+${p.high_gain_pct.toFixed(1)}%)</span></td><td class="${plCls}">${p.pl_dollars >= 0 ? '+' : ''}$${p.pl_dollars.toFixed(2)}</td></tr>`;
   }).join('');
 
-  wrap.innerHTML = `
-    <table class="pos-table">
-      <thead>
-        <tr>
-          <th>Ticker</th>
-          <th>Entry</th>
-          <th>Now</th>
-          <th>Gain</th>
-          <th>Stop (distance)</th>
-          <th>High reached</th>
-          <th>P/L</th>
-        </tr>
-      </thead>
-      <tbody>${rows}</tbody>
-    </table>`;
+  wrap.innerHTML = `<table class="pos-table"><thead><tr><th>Ticker</th><th>Entry</th><th>Now</th><th>Gain</th><th>Stop (dist)</th><th>High</th><th>P/L</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
 async function loadAll() {
   document.body.classList.add('scanning');
-
-  // Scanner data
   try {
     const res = await fetch(LATEST + '?_=' + Date.now());
     if (!res.ok) throw new Error('latest.json not found');
@@ -549,17 +383,14 @@ async function loadAll() {
     $('#statCount').textContent = data.count;
     const hits = data.hits || [];
     const clean = hits.filter(h => h.tier === 'CLEAN');
+    const elite = hits.filter(h => h.fund_tag === 'ELITE');
     $('#statClean').textContent = clean.length;
+    $('#statElite').textContent = elite.length;
     if (hits.length) {
-      const top = [...hits].sort((a,b) => b.score - a.score)[0];
-      $('#statTopScore').textContent = top.score;
-      $('#statTopTicker').textContent = top.ticker + ' · ' + top.grade;
       const avgRisk = (hits.reduce((a,h) => a + h.risk_pct, 0) / hits.length).toFixed(1);
       $('#statRisk').textContent = avgRisk + '%';
-      $('#statCountMeta').textContent = `${clean.length} clean · ${hits.length - clean.length} other`;
+      $('#statCountMeta').textContent = `${elite.length} elite · ${clean.length - elite.length} clean · ${hits.length - clean.length} other`;
     } else {
-      $('#statTopScore').textContent = '—';
-      $('#statTopTicker').textContent = '—';
       $('#statRisk').textContent = '—';
       $('#statCountMeta').textContent = 'Across all tiers';
     }
@@ -568,20 +399,12 @@ async function loadAll() {
     $('#tiersWrap').innerHTML = `<div class="empty"><div class="big">No scan data yet</div></div>`;
   }
 
-  // Positions
   try {
     const res = await fetch(POS_STATE + '?_=' + Date.now());
-    if (res.ok) {
-      const data = await res.json();
-      renderPositions(data);
-    } else {
-      renderPositions({ positions: [] });
-    }
-  } catch {
-    renderPositions({ positions: [] });
-  }
+    if (res.ok) renderPositions(await res.json());
+    else renderPositions({ positions: [] });
+  } catch { renderPositions({ positions: [] }); }
 
-  // History
   try {
     const res = await fetch(HIST + '?_=' + Date.now());
     if (res.ok) {
@@ -590,9 +413,11 @@ async function loadAll() {
       $('#histRow').innerHTML = hist.slice().reverse().map(h => {
         const pct = (h.count / max) * 100;
         const t = fmtTime(h.timestamp);
+        const hasElite = (h.elite_count || 0) > 0;
         const hasClean = (h.clean_count || 0) > 0;
-        const tip = `${t} · ${h.count} hits` + (h.clean_count ? ` · ${h.clean_count} CLEAN` : '');
-        return `<div class="hist-bar ${hasClean ? 'has-clean' : ''}" style="height:${Math.max(4, pct)}%" data-tooltip="${tip}"></div>`;
+        const cls = hasElite ? 'has-elite' : (hasClean ? 'has-clean' : '');
+        const tip = `${t} · ${h.count} hits` + (h.elite_count ? ` · ${h.elite_count} ELITE` : '') + (h.clean_count ? ` · ${h.clean_count} CLEAN` : '');
+        return `<div class="hist-bar ${cls}" style="height:${Math.max(4, pct)}%" data-tooltip="${tip}"></div>`;
       }).join('');
     }
   } catch {}
