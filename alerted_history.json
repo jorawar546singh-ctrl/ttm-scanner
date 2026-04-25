@@ -1,0 +1,101 @@
+[
+  {
+    "ticker": "CEVA",
+    "first_alerted": "2026-04-24T22:18:11",
+    "breakout_price": 28.87,
+    "breakout_box_top": 25.76,
+    "original_grade": "B",
+    "original_tier": "SOLID",
+    "original_score": 71,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "SYNA",
+    "first_alerted": "2026-04-24T22:18:11",
+    "breakout_price": 93.86,
+    "breakout_box_top": 89.93,
+    "original_grade": "B",
+    "original_tier": "SOLID",
+    "original_score": 71,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "AIP",
+    "first_alerted": "2026-04-24T22:18:11",
+    "breakout_price": 26.72,
+    "breakout_box_top": 24.88,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 68,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "ATOM",
+    "first_alerted": "2026-04-24T22:18:11",
+    "breakout_price": 8.6,
+    "breakout_box_top": 7.32,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 67,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "COHU",
+    "first_alerted": "2026-04-24T22:18:11",
+    "breakout_price": 46.93,
+    "breakout_box_top": 46.71,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 66,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "MXL",
+    "first_alerted": "2026-04-24T22:18:11",
+    "breakout_price": 60.32,
+    "breakout_box_top": 37.37,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 64,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "OGN",
+    "first_alerted": "2026-04-24T22:18:11",
+    "breakout_price": 11.26,
+    "breakout_box_top": 9.83,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 64,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "POET",
+    "first_alerted": "2026-04-24T22:18:11",
+    "breakout_price": 15.1,
+    "breakout_box_top": 12.95,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 61,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "INTC",
+    "first_alerted": "2026-04-24T22:18:11",
+    "breakout_price": 82.54,
+    "breakout_box_top": 70.33,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 61,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  }
+]
