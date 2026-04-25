@@ -12,7 +12,7 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     permissions:
       contents: write
 
@@ -41,6 +41,13 @@ jobs:
           TZ: America/New_York
         run: python ttm_scanner.py
 
+      - name: Run streak tracker
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          TZ: America/New_York
+        run: python streak_tracker.py
+
       - name: Run position tracker
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -52,7 +59,7 @@ jobs:
         run: |
           git config user.name  "ttm-scanner-bot"
           git config user.email "actions@github.com"
-          git add latest.json history.json alerted.log positions_state.json breakouts_*.csv 2>/dev/null || true
+          git add latest.json history.json alerted.log alerted_history.json streaks_state.json positions_state.json breakouts_*.csv 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "scan $(date -u +'%Y-%m-%d %H:%M UTC')"
             git push
