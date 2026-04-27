@@ -130,5 +130,49 @@
     "original_score": 73,
     "original_fund_score": null,
     "original_fund_tag": null
+  },
+  {
+    "ticker": "CLF",
+    "first_alerted": "2026-04-27T17:38:07",
+    "breakout_price": 10.61,
+    "breakout_box_top": 10.0,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 79,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "NE",
+    "first_alerted": "2026-04-27T17:38:07",
+    "breakout_price": 53.6,
+    "breakout_box_top": 51.33,
+    "original_grade": "B",
+    "original_tier": "SOLID",
+    "original_score": 72,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "LAC",
+    "first_alerted": "2026-04-27T17:38:07",
+    "breakout_price": 5.25,
+    "breakout_box_top": 5.17,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 69,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "CRML",
+    "first_alerted": "2026-04-27T17:38:07",
+    "breakout_price": 14.45,
+    "breakout_box_top": 13.75,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 68,
+    "original_fund_score": null,
+    "original_fund_tag": null
   }
 ]
