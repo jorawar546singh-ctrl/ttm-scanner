@@ -1,5 +1,18 @@
 [
   {
+    "timestamp": "2026-04-28T14:11:17",
+    "count": 5,
+    "tickers": [
+      "CECO",
+      "OMCL",
+      "KNSA",
+      "LFST",
+      "CNC"
+    ],
+    "clean_count": 1,
+    "elite_count": 0
+  },
+  {
     "timestamp": "2026-04-27T17:38:07",
     "count": 7,
     "tickers": [
