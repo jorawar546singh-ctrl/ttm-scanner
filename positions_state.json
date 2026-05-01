@@ -1,4 +1,23 @@
 {
-  "positions": [],
-  "updated": "2026-04-30T17:37:17"
+  "positions": [
+    {
+      "ticker": "CPRX",
+      "entry_price": 29.22,
+      "entry_date": "2026-04-27",
+      "shares": 9.0,
+      "initial_stop": 27.54,
+      "last_price": 28.25,
+      "running_high": 29.22,
+      "current_stop": 27.54,
+      "stop_rule": "initial",
+      "gain_pct": -3.32,
+      "high_gain_pct": 0.0,
+      "pl_dollars": -8.73,
+      "last_milestone": 0,
+      "status": "open",
+      "last_checked": "2026-05-01T12:15:54",
+      "notes": "First real trade. TFSA. Stop-limit sell already placed at broker."
+    }
+  ],
+  "updated": "2026-05-01T12:15:54"
 }

@@ -1,5 +1,14 @@
 [
   {
+    "timestamp": "2026-05-01T12:15:40",
+    "count": 1,
+    "tickers": [
+      "BTSG"
+    ],
+    "clean_count": 0,
+    "elite_count": 0
+  },
+  {
     "timestamp": "2026-04-30T17:37:00",
     "count": 6,
     "tickers": [

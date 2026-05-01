@@ -449,5 +449,16 @@
     "original_score": 68,
     "original_fund_score": null,
     "original_fund_tag": null
+  },
+  {
+    "ticker": "BTSG",
+    "first_alerted": "2026-05-01T12:15:40",
+    "breakout_price": 53.54,
+    "breakout_box_top": 48.97,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 76,
+    "original_fund_score": null,
+    "original_fund_tag": null
   }
 ]

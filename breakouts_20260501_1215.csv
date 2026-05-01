@@ -1,0 +1,2 @@
+ticker,price,box_top,box_bottom,pct_above_box,vol_today,vol_avg_20d,vol_ratio,suggested_stop,target_30pct,risk_pct,rr_ratio,box_range_pct,ma20,ma_rising,price_vs_ma20_pct,score,grade,tier,emoji
+BTSG,53.54,48.97,44.77,9.33,5201040,2098645,2.48,47.99,69.6,10.36,2.89,8.58,46.91,True,14.13,76,B+,SOLID,🟡
