@@ -504,5 +504,16 @@
     "original_score": 64,
     "original_fund_score": null,
     "original_fund_tag": null
+  },
+  {
+    "ticker": "GBTG",
+    "first_alerted": "2026-05-04T14:05:59",
+    "breakout_price": 9.32,
+    "breakout_box_top": 6.3,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 78,
+    "original_fund_score": null,
+    "original_fund_tag": null
   }
 ]

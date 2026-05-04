@@ -1,0 +1,2 @@
+ticker,price,box_top,box_bottom,pct_above_box,vol_today,vol_avg_20d,vol_ratio,suggested_stop,target_30pct,risk_pct,rr_ratio,box_range_pct,ma20,ma_rising,price_vs_ma20_pct,score,grade,tier,emoji
+GBTG,9.32,6.3,5.61,48.13,62695738,1221415,51.33,6.17,12.12,33.84,0.89,10.8,5.98,True,56.06,78,B+,SOLID,🟡
