@@ -537,5 +537,71 @@
     "original_score": 72,
     "original_fund_score": null,
     "original_fund_tag": null
+  },
+  {
+    "ticker": "CYTK",
+    "first_alerted": "2026-05-05T14:03:23",
+    "breakout_price": 77.06,
+    "breakout_box_top": 67.26,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 84,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "OPLN",
+    "first_alerted": "2026-05-05T14:03:23",
+    "breakout_price": 35.03,
+    "breakout_box_top": 32.9,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 83,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "EWTX",
+    "first_alerted": "2026-05-05T14:03:23",
+    "breakout_price": 37.9,
+    "breakout_box_top": 35.0,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 82,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "PINS",
+    "first_alerted": "2026-05-05T14:03:23",
+    "breakout_price": 22.76,
+    "breakout_box_top": 21.14,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 79,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "BLSH",
+    "first_alerted": "2026-05-05T14:03:23",
+    "breakout_price": 45.54,
+    "breakout_box_top": 44.05,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 76,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "LTH",
+    "first_alerted": "2026-05-05T14:03:23",
+    "breakout_price": 29.15,
+    "breakout_box_top": 28.91,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 66,
+    "original_fund_score": null,
+    "original_fund_tag": null
   }
 ]
