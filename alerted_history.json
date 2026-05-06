@@ -724,5 +724,82 @@
     "original_score": 62,
     "original_fund_score": null,
     "original_fund_tag": null
+  },
+  {
+    "ticker": "SRTA",
+    "first_alerted": "2026-05-06T17:48:43",
+    "breakout_price": 5.33,
+    "breakout_box_top": 5.18,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 83,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "IFF",
+    "first_alerted": "2026-05-06T17:48:43",
+    "breakout_price": 82.93,
+    "breakout_box_top": 76.19,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 83,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "TGTX",
+    "first_alerted": "2026-05-06T17:48:43",
+    "breakout_price": 41.97,
+    "breakout_box_top": 38.38,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 78,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "VCYT",
+    "first_alerted": "2026-05-06T17:48:43",
+    "breakout_price": 41.19,
+    "breakout_box_top": 34.8,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 75,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "TMC",
+    "first_alerted": "2026-05-06T17:48:43",
+    "breakout_price": 6.16,
+    "breakout_box_top": 5.83,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 75,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "JOBY",
+    "first_alerted": "2026-05-06T17:48:43",
+    "breakout_price": 10.52,
+    "breakout_box_top": 9.89,
+    "original_grade": "B",
+    "original_tier": "SOLID",
+    "original_score": 72,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "UBER",
+    "first_alerted": "2026-05-06T17:48:43",
+    "breakout_price": 79.17,
+    "breakout_box_top": 78.76,
+    "original_grade": "B",
+    "original_tier": "SOLID",
+    "original_score": 70,
+    "original_fund_score": null,
+    "original_fund_tag": null
   }
 ]
