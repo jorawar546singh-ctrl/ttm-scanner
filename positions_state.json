@@ -6,18 +6,18 @@
       "entry_date": "2026-04-27",
       "shares": 9.0,
       "initial_stop": 27.54,
-      "last_price": 31.15,
-      "running_high": 31.22,
+      "last_price": 31.165,
+      "running_high": 31.29,
       "current_stop": 27.54,
       "stop_rule": "initial",
-      "gain_pct": 6.61,
-      "high_gain_pct": 6.84,
-      "pl_dollars": 17.37,
+      "gain_pct": 6.66,
+      "high_gain_pct": 7.08,
+      "pl_dollars": 17.51,
       "last_milestone": 0,
       "status": "open",
-      "last_checked": "2026-05-07T11:14:46",
+      "last_checked": "2026-05-07T16:08:07",
       "notes": "First real trade. TFSA. Stop-limit sell already placed at broker."
     }
   ],
-  "updated": "2026-05-07T11:14:46"
+  "updated": "2026-05-07T16:08:07"
 }

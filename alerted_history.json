@@ -867,5 +867,104 @@
     "original_score": 58,
     "original_fund_score": null,
     "original_fund_tag": null
+  },
+  {
+    "ticker": "NP",
+    "first_alerted": "2026-05-07T16:07:39",
+    "breakout_price": 30.47,
+    "breakout_box_top": 29.25,
+    "original_grade": "A",
+    "original_tier": "CLEAN",
+    "original_score": 86,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "SEZL",
+    "first_alerted": "2026-05-07T16:07:39",
+    "breakout_price": 99.82,
+    "breakout_box_top": 91.7,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 82,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "PTRN",
+    "first_alerted": "2026-05-07T16:07:39",
+    "breakout_price": 16.95,
+    "breakout_box_top": 14.51,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 81,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "COLD",
+    "first_alerted": "2026-05-07T16:07:39",
+    "breakout_price": 14.98,
+    "breakout_box_top": 12.98,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 79,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "RXO",
+    "first_alerted": "2026-05-07T16:07:39",
+    "breakout_price": 23.15,
+    "breakout_box_top": 20.38,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 78,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "RGC",
+    "first_alerted": "2026-05-07T16:07:39",
+    "breakout_price": 31.47,
+    "breakout_box_top": 30.82,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 76,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "PRMB",
+    "first_alerted": "2026-05-07T16:07:39",
+    "breakout_price": 22.24,
+    "breakout_box_top": 21.33,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 76,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "FA",
+    "first_alerted": "2026-05-07T16:07:39",
+    "breakout_price": 15.76,
+    "breakout_box_top": 13.58,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 75,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "HRB",
+    "first_alerted": "2026-05-07T16:07:39",
+    "breakout_price": 36.28,
+    "breakout_box_top": 32.62,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 75,
+    "original_fund_score": null,
+    "original_fund_tag": null
   }
 ]
