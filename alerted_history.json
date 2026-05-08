@@ -1043,5 +1043,49 @@
     "original_score": 55,
     "original_fund_score": null,
     "original_fund_tag": null
+  },
+  {
+    "ticker": "MNST",
+    "first_alerted": "2026-05-08T16:00:43",
+    "breakout_price": 86.31,
+    "breakout_box_top": 78.37,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 82,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "DBX",
+    "first_alerted": "2026-05-08T16:00:43",
+    "breakout_price": 28.9,
+    "breakout_box_top": 25.64,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 79,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "CALY",
+    "first_alerted": "2026-05-08T16:00:43",
+    "breakout_price": 17.5,
+    "breakout_box_top": 15.57,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 75,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "NSIT",
+    "first_alerted": "2026-05-08T16:00:43",
+    "breakout_price": 83.86,
+    "breakout_box_top": 78.9,
+    "original_grade": "B",
+    "original_tier": "SOLID",
+    "original_score": 72,
+    "original_fund_score": null,
+    "original_fund_tag": null
   }
 ]

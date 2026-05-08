@@ -6,18 +6,36 @@
       "entry_date": "2026-04-27",
       "shares": 9.0,
       "initial_stop": 27.54,
-      "last_price": 31.16,
+      "last_price": 31.15,
       "running_high": 31.29,
       "current_stop": 27.54,
       "stop_rule": "initial",
-      "gain_pct": 6.64,
+      "gain_pct": 6.61,
       "high_gain_pct": 7.08,
-      "pl_dollars": 17.46,
+      "pl_dollars": 17.37,
       "last_milestone": 0,
       "status": "open",
-      "last_checked": "2026-05-08T13:00:15",
+      "last_checked": "2026-05-08T16:01:09",
       "notes": "First real trade. TFSA. Stop-limit sell already placed at broker."
+    },
+    {
+      "ticker": "GTX",
+      "entry_price": 28.8,
+      "entry_date": "2026-05-08",
+      "shares": 25.0,
+      "initial_stop": 26.84,
+      "last_price": 29.0,
+      "running_high": 29.18,
+      "current_stop": 26.84,
+      "stop_rule": "initial",
+      "gain_pct": 0.69,
+      "high_gain_pct": 1.32,
+      "pl_dollars": 5.0,
+      "last_milestone": 0,
+      "status": "open",
+      "last_checked": "2026-05-08T16:01:10",
+      "notes": "Late entry on day-6 of streak. Box top was $27.39. Larger than rules allow."
     }
   ],
-  "updated": "2026-05-08T13:00:15"
+  "updated": "2026-05-08T16:01:10"
 }
