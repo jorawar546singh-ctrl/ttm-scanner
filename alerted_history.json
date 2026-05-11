@@ -1120,5 +1120,60 @@
     "original_score": 64,
     "original_fund_score": null,
     "original_fund_tag": null
+  },
+  {
+    "ticker": "PLUG",
+    "first_alerted": "2026-05-11T19:16:21",
+    "breakout_price": 3.52,
+    "breakout_box_top": 3.44,
+    "original_grade": "B",
+    "original_tier": "SOLID",
+    "original_score": 74,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "SKYT",
+    "first_alerted": "2026-05-11T19:16:21",
+    "breakout_price": 35.09,
+    "breakout_box_top": 34.4,
+    "original_grade": "B",
+    "original_tier": "SOLID",
+    "original_score": 73,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "HYMC",
+    "first_alerted": "2026-05-11T19:16:21",
+    "breakout_price": 43.71,
+    "breakout_box_top": 43.44,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 62,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "ACHR",
+    "first_alerted": "2026-05-11T19:16:21",
+    "breakout_price": 6.54,
+    "breakout_box_top": 6.53,
+    "original_grade": "C",
+    "original_tier": "MARGINAL",
+    "original_score": 59,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "NBTX",
+    "first_alerted": "2026-05-11T19:16:21",
+    "breakout_price": 53.55,
+    "breakout_box_top": 45.6,
+    "original_grade": "C",
+    "original_tier": "MARGINAL",
+    "original_score": 58,
+    "original_fund_score": null,
+    "original_fund_tag": null
   }
 ]
