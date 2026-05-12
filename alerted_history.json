@@ -1252,5 +1252,16 @@
     "original_score": 66,
     "original_fund_score": null,
     "original_fund_tag": null
+  },
+  {
+    "ticker": "ALKS",
+    "first_alerted": "2026-05-12T19:41:34",
+    "breakout_price": 38.29,
+    "breakout_box_top": 36.6,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 76,
+    "original_fund_score": null,
+    "original_fund_tag": null
   }
 ]
