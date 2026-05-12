@@ -1175,5 +1175,82 @@
     "original_score": 58,
     "original_fund_score": null,
     "original_fund_tag": null
+  },
+  {
+    "ticker": "RAL",
+    "first_alerted": "2026-05-12T15:22:57",
+    "breakout_price": 57.45,
+    "breakout_box_top": 49.65,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 81,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "SE",
+    "first_alerted": "2026-05-12T15:22:57",
+    "breakout_price": 97.05,
+    "breakout_box_top": 91.97,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 79,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "HLIO",
+    "first_alerted": "2026-05-12T15:22:57",
+    "breakout_price": 77.45,
+    "breakout_box_top": 70.23,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 79,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "PACS",
+    "first_alerted": "2026-05-12T15:22:57",
+    "breakout_price": 40.74,
+    "breakout_box_top": 36.79,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 78,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "ARMK",
+    "first_alerted": "2026-05-12T15:22:57",
+    "breakout_price": 48.55,
+    "breakout_box_top": 46.88,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 77,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "QUBT",
+    "first_alerted": "2026-05-12T15:22:57",
+    "breakout_price": 11.74,
+    "breakout_box_top": 10.53,
+    "original_grade": "B+",
+    "original_tier": "SOLID",
+    "original_score": 76,
+    "original_fund_score": null,
+    "original_fund_tag": null
+  },
+  {
+    "ticker": "HALO",
+    "first_alerted": "2026-05-12T15:22:57",
+    "breakout_price": 71.17,
+    "breakout_box_top": 70.32,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 66,
+    "original_fund_score": null,
+    "original_fund_tag": null
   }
 ]
