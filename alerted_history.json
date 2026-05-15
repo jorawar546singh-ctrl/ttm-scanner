@@ -1516,5 +1516,16 @@
     "original_score": 58,
     "original_fund_score": null,
     "original_fund_tag": null
+  },
+  {
+    "ticker": "ENPH",
+    "first_alerted": "2026-05-15T18:15:05",
+    "breakout_price": 52.89,
+    "breakout_box_top": 49.41,
+    "original_grade": "C+",
+    "original_tier": "MARGINAL",
+    "original_score": 65,
+    "original_fund_score": null,
+    "original_fund_tag": null
   }
 ]
